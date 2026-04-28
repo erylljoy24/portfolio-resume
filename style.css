@@ -25,7 +25,6 @@ body {
   cursor: none;
 }
 
-/* ── Custom cursor ── */
 #cursor {
   width: 12px; height: 12px;
   background: var(--accent);
@@ -45,7 +44,6 @@ body {
   opacity: .5;
 }
 
-/* ── Noise overlay ── */
 body::before {
   content: '';
   position: fixed; inset: 0;
@@ -53,7 +51,6 @@ body::before {
   pointer-events: none; z-index: 0; opacity: .4;
 }
 
-/* ── Grid lines bg ── */
 body::after {
   content: '';
   position: fixed; inset: 0;
@@ -65,7 +62,6 @@ body::after {
   pointer-events: none; z-index: 0;
 }
 
-/* ── Nav ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
@@ -150,7 +146,6 @@ nav {
 }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
-/* ── Floating code snippet ── */
 .hero-code {
   position: absolute; right: 60px; top: 50%;
   transform: translateY(-50%);
@@ -175,7 +170,7 @@ nav {
 .str { color: var(--accent3); }
 .cm  { color: var(--text3); }
 
-/* ── Section common ── */
+
 section { padding: 100px 60px; position: relative; z-index: 1; }
 .section-label {
   font-family: var(--mono); font-size: .7rem;
@@ -193,7 +188,6 @@ section { padding: 100px 60px; position: relative; z-index: 1; }
   letter-spacing: -.02em;
 }
 
-/* ── Skills ── */
 #skills { background: var(--surface); }
 .skills-grid {
   display: grid;
@@ -215,7 +209,6 @@ section { padding: 100px 60px; position: relative; z-index: 1; }
 .skill-name { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
 .skill-sub  { font-family: var(--mono); font-size: .72rem; color: var(--text2); }
 
-/* ── Experience ── */
 .timeline { position: relative; }
 .timeline::before {
   content: '';
@@ -254,7 +247,6 @@ section { padding: 100px 60px; position: relative; z-index: 1; }
   position: absolute; left: 0;
 }
 
-/* ── Stats row ── */
 .stats-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -272,7 +264,6 @@ section { padding: 100px 60px; position: relative; z-index: 1; }
   color: var(--text2); letter-spacing: .1em; text-transform: uppercase;
 }
 
-/* ── Projects ── */
 #projects { background: var(--surface); }
 .proj-grid {
   display: grid;
@@ -314,7 +305,6 @@ section { padding: 100px 60px; position: relative; z-index: 1; }
 .tag.green  { background: rgba(0,255,136,.07); border-color: rgba(0,255,136,.2);  color: var(--accent2); }
 .tag.orange { background: rgba(255,107,53,.07); border-color: rgba(255,107,53,.2); color: var(--accent3); }
 
-/* ── Contact ── */
 #contact { background: var(--surface); text-align: center; }
 .contact-inner { max-width: 600px; margin: 0 auto; }
 .contact-email {
@@ -334,7 +324,6 @@ section { padding: 100px 60px; position: relative; z-index: 1; }
 }
 .contact-link:hover { border-color: var(--accent); color: var(--accent); }
 
-/* ── Footer ── */
 footer {
   padding: 32px 60px;
   border-top: 1px solid var(--border);
@@ -343,7 +332,6 @@ footer {
   position: relative; z-index: 1;
 }
 
-/* ── Scroll reveal ── */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -351,7 +339,6 @@ footer {
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
-/* ── Responsive ── */
 @media (max-width: 900px) {
   nav { padding: 16px 24px; }
   section { padding: 72px 24px; }

@@ -1,4 +1,3 @@
-// ── Custom Cursor ──────────────────────────────────────────────────────────
 const cur  = document.getElementById('cursor');
 const ring = document.getElementById('cursor-ring');
 let mx = 0, my = 0, rx = 0, ry = 0;
@@ -38,7 +37,6 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// ── Typing Effect ───────────────────────────────────────────────────────────
 const titles = [
   'Mobile / Full-Stack Developer',
   'Flutter Specialist',
